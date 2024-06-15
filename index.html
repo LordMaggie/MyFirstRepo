@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags for Bootstrap and JQuery -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- JS Imports -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.js"></script>
+
+  <script>
+    $.widget.bridge('uitooltip', $.ui.tooltip);
+    $.widget.bridge('uibutton', $.ui.button);
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <div id="sasha-carousel" class="carousel slide" data-ride="carousel">
+
+    <!-- the ol tag below means ordered list, and the li tag is the list item. we use this to create the indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#sasha-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#sasha-carousel" data-slide-to="1"></li>
+      <li data-target="#sasha-carousel" data-slide-to="2"></li>
+      <li data-target="#sasha-carousel" data-slide-to="3"></li>
+      <li data-target="#sasha-carousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- All slides -->
+    <div class="carousel-inner">
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="flex-container">
+          <h1>Sasha's favorite things!</h1>
+          <img src="sashasilly.png"> 
+          <div class="carousel-caption">
+            <p style="color:red;">I asked her for everything, so these responses are genuine!!</p>
+          </div>
+        </div> 
+      </div> 
+
+      <!-- Second slide -->
+      <div class="carousel-item">
+        <div class="flex-container">
+          <h1>Sasha's favorite food:</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVPq9agX9xfIskW55jvtpxNOqwyaR0Y8ZFww&s" alt="bananas">
+          <div class="carousel-caption">
+            <p style="color:red;">She was torn between bananas and cherries, but she finally chose bananas</p>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Third slide -->
+      <div class="carousel-item">
+        <div class="flex-container">
+          <h1>Her favorite animal:</h1>
+          <img src = "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/beautiful-horse-enjoying-a-morning-run-cgbaldauf.jpg" alt="horse">
+          <div class="carousel-caption">
+            <p style="color:red;">Sometimes she likes cats, sometimes she likes frogs. Today, she decided she likes horses.</p>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Fourth slide-->
+      <div class="carousel-item">
+        <div class="flex-container">
+          <h1>Sasha's Favorite Movie/Franchise</h1>
+          <img src="https://parade.com/.image/t_share/MTkzMDI5OTE1MzU5MTI2NzQ5/how-to-stream-harry-potter-movies-how-to-watch-harry-potter-movies-streaming.jpg" alt="harry potter">
+          <div class="carousel-caption">
+            <p style="color:red;">Her favorite spell is wingaridum leviosa, partially because it is the only one she knows.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth slide -->
+      <div class="carousel-item">
+        <div class="flex-container">
+          <h1>Thanks for watching!</h1>
+          <img src="cutesasha.png" alt="cute sasha">
+          <div class="carousel-caption">
+            <p style="color:red">:)</p>
+          </div>
+        </div>
+      </div>
+    </div>        
+
+    <a class="carousel-control-prev" href="#sasha-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#sasha-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
